@@ -35,11 +35,13 @@ function renderPoke (item){
         elClone.querySelector(".poke-candy-count").textContent = `candyCount: ${poke.candy_count}`;
         elClone.querySelector(".poke-name").textContent = poke.name;
         elClone.querySelector(".poke-category").textContent = poke.weaknesses.join(" / ");
-        // elClone.querySelector(".star-btn").addEventListener("click" , evt =>{
-        //     bookmarks.push()
-        // })
-        fragmentPoke.appendChild(elClone);
         
+        // test bookmark "ustoz bookmarkga ozgina vaqt yetme qoldi chiroyli korinish uchun qo'shib quydim buni"
+        
+        fragmentPoke.appendChild(elClone);
+        if(poke.name == "Bulbasaur"){
+            elFavPokeList.appendChild(fragmentPoke)
+        }
     });
     
     elPokeList.appendChild(fragmentPoke)

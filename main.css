@@ -31,7 +31,7 @@ body{
     font-weight: 600;
     border-radius: 0px 20px 0px 20px;
     padding: 5px 10px;
-    margin-left: 149px;
+    margin-left: 137px;
     margin-top: -10px;
     
 }
@@ -98,18 +98,17 @@ body{
 }
 
 .bookmark-button{
-    position: fixed;
-    margin-left: 1300px;
-    margin-top: -300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
     background-image: url("images/mark.png");
     background-repeat: no-repeat;
     background-size: 40px 40px;
     background-position: center;
-    background-color: #2774BA;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #FFCC01
+    background-color: transparent;
+    min-width: 43px;
+    height: 43px;
+    border: none;
 }
 
 .bookmark{
@@ -120,11 +119,15 @@ body{
     width: 500px;
     height: 100%;
     background-color: #fff;
+    transition:  0.4s;
 }
 
 .title-bookmark{
     color: #012a4f;
     text-align: center;
+    background: #FFCC01;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .close-bookmark{
@@ -141,4 +144,9 @@ body{
 
 .bookmark-open{
     display: block;
+}
+
+.star-btn{
+    background: transparent;
+    border: none;
 }

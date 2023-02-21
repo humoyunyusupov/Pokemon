@@ -10,6 +10,9 @@ const elMaxCandy = document.querySelector(".js-candy-max")
 const elCardPoke = document.querySelector(".poke-item")
 const elStar = document.querySelector(".star-bookmark")
 const elBookmark = document.querySelector(".bookmark")
+const elFavPokeList = document.querySelector(".bookmark")
+
+const bookmarks = []
 
 
 // Render Poke
@@ -32,7 +35,9 @@ function renderPoke (item){
         elClone.querySelector(".poke-candy-count").textContent = `candyCount: ${poke.candy_count}`;
         elClone.querySelector(".poke-name").textContent = poke.name;
         elClone.querySelector(".poke-category").textContent = poke.weaknesses.join(" / ");
-        
+        // elClone.querySelector(".star-btn").addEventListener("click" , evt =>{
+        //     bookmarks.push()
+        // })
         fragmentPoke.appendChild(elClone);
         
     });
@@ -147,6 +152,15 @@ elForm.addEventListener("submit" , (evt )=> {
 
 
 // Listen Star
+
+
+function openBookMark(){
+    elBookmark.classList.add("bookmark-open");
+}
+function closeBookMark(){
+    elBookmark.classList.remove("bookmark-open");
+}
+
 
 
 

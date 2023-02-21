@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #012a4f;
 }
 
 .logo{
@@ -8,38 +8,137 @@ body{
     width: 800px;
     margin-bottom: 50px;
 }
-ul{
+.button-poke{
+    background-color: #2774BA;
+    border: 5px solid #FFCC01;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.poke-list{
+    margin-top: 70px;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
     list-style: none;
+    
 }
-li{
-    padding: 20px;
-    width: 300px;
-    background-color: darkcyan;
-    border-radius: 50px;
+.poke-number{
+    background-color: #FFCC01;
+    font-weight: 600;
+    border-radius: 0px 20px 0px 20px;
+    padding: 5px 10px;
+    margin-left: 149px;
+    margin-top: -10px;
+    
 }
-img{
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-}
-h2{
-    text-align: center;
-}
-p{
-    padding: 2px;
-    max-width: 50px;
-    text-align: center;
-    background-color: blue;
-    color: white;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-span{
-    padding: 5px;
-    background-color: yellow;
+.poke-item{
+    max-width: 240px;
+    width: 100%;
+    /* padding: 0px 20px 20px 20px; */
+    list-style: none;
     border-radius: 20px;
+    background-color: #2774BA;
+    border: 5px solid #FFCC01;
+    transition: ease-in 0.2s;
+}
+.poke-item:hover{
+    box-shadow: 0px 10px 25px #FFCC01;;
+    
+}
+
+.poke-img{
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.poke-weight{
+    background: #2774BA;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #fff;
+    border: 3px solid #FFCC01;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    font-weight: 600
+}
+
+
+.poke-candy-count{
+    background: #FFCC01;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #012a4f;
+    margin-bottom: 10px;
+    font-weight: 600
+}
+.poke-category{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #012a4f;
+    color: #fff;
+    border-radius: 0px 0px 16px 16px;
+    font-size: 10px;  
+    font-weight: 500;  
+}
+
+.star-bookmark{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bookmark-button{
+    position: fixed;
+    margin-left: 1300px;
+    margin-top: -300px;
+    background-image: url("images/mark.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+    background-color: #2774BA;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #FFCC01
+}
+
+.bookmark{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.title-bookmark{
+    color: #012a4f;
+    text-align: center;
+}
+
+.close-bookmark{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("images/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+.bookmark-open{
+    display: block;
 }

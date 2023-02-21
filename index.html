@@ -5,18 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    
     <div class="container">
-        <img class="logo" src="images/logo.png" alt="logo">
+        <img class="logo img-fluid" src="images/logo.png" alt="logo">
+        <form class="js-form d-flex flex-column gap-3  flex-md-row my-4 " method="GET">
+            <input class="js-input form-control" type="search" placeholder="Search">
+            <select class="js-select form-control" name="select">
+                <option value="all">All</option>
+            </select>
+            <select class="a-to-z js-a-to-z form-control" name="A-Z">
+                <option value="All">All</option>
+                <option value="A to Z">A to Z</option>
+                <option value="Z to A">Z to A</option>
+                <option value="From Thin">From Thin</option>
+                <option value="From Fat">From Fat</option>
+            </select>
+            <input class="js-candy-min form-control" type="number" placeholder="Min count Candy">
+            <input class="js-candy-max form-control" type="number" placeholder="Max count Candy">
+            <button class="button-poke">Search</button>
+            <button type="button" class="bookmark-button"></button>
+        </form>
         <ul class="poke-list">
             
         </ul>
     </div>
     
-    
-    
+    <template class="poke-template">
+        <li class="poke-item">
+            <div class="wrap-poke-num d-flex align-items-center">
+                <img class="star-bookmark" src="images/star.png" alt="Star for BookMark">
+                <span class="poke-number">1</span>
+            </div>
+            <img class="poke-img" src="https://via.placeholder.com/100.png/09f/fff"  alt="Pokemon">
+            <h3 class="poke-name text-white  text-center  fs-4  mb-4">
+                Humoyun
+            </h3>
+            <div class="d-flex flex-column align-items-center">
+                <span class="poke-weight">
+                    60 kg
+                </span>
+                <span class="poke-candy-count">
+                    candyCount 777
+                </span>
+            </div>
+            <p class="poke-category">
+                fire fire fire
+            </p>
+        </li>
+    </template>
+    <!-- <li class="poke-item">
+        <div class="wrap-poke-num d-flex align-items-center">
+            <img class="star-bookmark" src="images/star.png" alt="Star for BookMark">
+            <span class="poke-number">1</span>
+        </div>
+        <img class="poke-img" src="https://via.placeholder.com/100.png/09f/fff"  alt="Pokemon">
+        <h3 class="poke-name text-white  text-center  fs-4  mb-4">
+            Humoyun
+        </h3>
+        <div class="d-flex flex-column align-items-center">
+            <span class="poke-weight">
+                60 kg
+            </span>
+            <span class="poke-candy-count">
+                candyCount 777
+            </span>
+        </div>
+        <p class="poke-category">
+            fire fire fire
+        </p>
+    </li> -->
+
+
+    <!-- //Bookmark -->
+
+    <div class="bookmark">
+        <button class="close-bookmark mb-5"></button>
+        <h1 class="title-bookmark">
+            My Favorite Pokemons
+        </h1>
+        <ul class="favorit-poke-list">
+
+        </ul>
+    </div>
     
     <script src="pokemons.js"></script>
     <script src="main.js"></script>
